@@ -3,9 +3,380 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Oliveros | Portfolio</title>
+  <link rel="icon" href="./images/logo.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <!--HEADER START-->
+  <header>
+    <a href="./index">
+      <img src="./images/logo.png" alt="LOGO">
+    </a>
+  
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link"><p>Home</p></a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link"><p>About</p></a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link"><p>Skills</p></a>
+        </li>
+        <li class="nav-item">
+          <a href="#project" class="nav-link"><p>Projects</p></a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link"><p>Services</p></a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link"><p>Contact</p></a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div class="links">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/franklinjames.oliveros" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-facebook'></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/franklin-oliveros-ab4869310/" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-linkedin' ></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <i class='bx bxl-instagram' ></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+	<!--HEADER END-->
+
+  <!-- HOME START -->
+  <section id="home" data-section="home">
+    <div class="title">
+      <h3>I'm a</h3>
+      <h1><span class="animated-title">Front-End Developer</span></h1>
+      <button onclick="window.location.href = '#contact';">CONTACT ME</button>
+    </div>
+  </section>
+  <!-- HOME END -->
+
+  <!-- ABOUT START -->
+  <section id="about" data-section="about">
+    <h2 class="sect_title about reveal" data-animation="fade-bottom">About Me</h2>
+  
+    <div class="contents reveal">
+      <div class="img_container reveal-img">
+        <img src="./images/profile.png" alt="">
+      </div>
+      <div class="info reveal-info">
+        <h4>My name is <span>Franklin Oliveros</span></h4>
+        <p>
+          Experienced computer science professional with a BSCS
+          in Computer Science from Western Mindanao State
+          University. Proficient in HTML, CSS, Bootstrap,
+          JavaScript, responsive design, and UI development.
+          Detail-oriented, organized, and effective in collaborative
+          teams. Creative, reliable, trustworthy, and committed to
+          continuous learning.
+        </p>
+        <div class="details">
+          <div class="detailss">
+            <h5>Name</h5>
+            <span>Franklin James I. Oliveros</span>
+          </div>
+          <div class="detailss">
+            <h5>Phone</h5>
+            <span>+63 992 631 2196</span>
+          </div>
+          <div class="detailss">
+            <h5>Country</h5>
+            <span>Philippines</span>
+          </div>
+          <div class="detailss">
+            <h5>Email</h5>
+            <span>franklinoliveros2003@gmail.com</span>
+          </div>
+          <div class="detailss">
+            <h5>Education</h5>
+            <span>---</span>
+          </div>
+        </div>
+        <div class="about-links">
+          <a href="#">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="https://www.linkedin.com/in/franklin-oliveros-ab4869310/" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-linkedin' ></i>
+          </a>
+          <a href="#">
+            <i class='bx bxl-instagram' ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT END -->
+
+  <!-- SKILLS START -->
+  <section id="skills" data-section="skills">
+    <h2 class="sect_title skills reveal" data-animation="fade-bottom">Skills</h2>
+
+    <p>I have honed my skills through dedication and hands-on experience in various areas of computer science. From designing responsive user interfaces to writing robust and efficient code, my expertise extends to:</p>
+
+    <ul class="skills-bar-container">
+      <li>
+        <div class="progressbar-title">
+          <h3>HTML5</h3>
+          <span class="percent" id="html-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar" id="progress-html"></span>
+        </div>
+      </li>
+      
+      <li>
+        <div class="progressbar-title">
+          <h3>CSS / SCSS</h3>
+          <span class="percent" id="css-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar" id="progress-css"></span>
+        </div>
+      </li>
+
+      <li>
+        <div class="progressbar-title">
+          <h3>JavaScript / jQuery</h3>
+          <span class="percent" id="javascript-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar" id="progress-javascript"></span>
+        </div>
+      </li>
+
+      <li>
+        <div class="progressbar-title">
+          <h3>PHP</h3>
+          <span class="percent" id="php-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar" id="progress-php"></span>
+        </div>
+      </li>
+
+      <li>
+        <div class="progressbar-title">
+          <h3>Bootstrap</h3>
+          <span class="percent" id="bootstrap-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar" id="progress-bootstrap"></span>
+        </div>
+      </li>
+
+      <li>
+        <div class="progressbar-title">
+          <h3>Tailwind</h3>
+          <span class="percent" id="tailwind-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar" id="progress-tailwind"></span>
+        </div>
+      </li>
+    </ul>
+
+    <h4>I am available for Freelancer!</h4>
+  </section>
+  <!-- SKILLS END -->
+
+  <!-- PROJECT START -->
+  <section id="project" data-section="project">
+    <h2 class="sect_title project reveal" data-animation="fade-bottom">Projects</h2>
+  
+    <ul class="project-container">
+      <li class="project-image reveal" data-animation="fade-bottom" style="background-image: url(images/project_images/Automated_Grading_System.png);">
+        <div class="text">
+          <h3><a href="#">Automated Grading System</a></h3>
+          <span>Javascript, HTML, CSS, PHP, Bootstrap</span>
+        </div>
+      </li>
+  
+      <li class="project-image reveal" data-animation="fade-bottom" style="background-image: url(images/project_images/real_estate.png);">
+        <div class="text">
+          <h3><a href="https://propad.w3bcs.com/">Real Estate</a></h3>
+          <span> HTML, CSS, Javascript, PHP</span>
+        </div>
+      </li>
+  
+      <li class="project-image reveal" data-animation="fade-bottom" style="background-image: url(images/project_images/docconnect.png);">
+        <div class="text">
+          <h3><a href="#">DocConnect</a></h3>
+          <span>HTML, CSS, Bootstrap, Javascript</span>
+        </div>
+      </li>
+  
+      <li class="project-image reveal" data-animation="fade-bottom" style="background-image: url(images/project_images/WebBlog2024.png);">
+        <div class="text">
+          <h3><a href="https://sites.google.com/view/bscstour2k24/home">Web Blog Post</a></h3>
+          <span>Google Site</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PROJECT END -->
+
+  <!-- SERVICE START -->
+  <section id="services" data-section="services">
+    <h2 class="sect_title service reveal" data-animation="fade-bottom">Services</h2>
+
+    <ul class="services-container">
+      <li class="service-item reveal">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Design and Development</h3>
+        <p>Creating responsive and visually appealing websites, developing user-friendly interfaces using HTML, CSS, and JavaScript.</p>
+      </li>
+
+      <li class="service-item reveal">
+        <i class='bx bx-paint'></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing user interfaces with a focus on user experience, Conducting user research and creating wireframes and prototypes.</p>
+      </li>
+
+      <li class="service-item reveal">
+        <i class='bx bx-mobile-alt'></i>
+        <h3>Responsive Design</h3>
+        <p>Ensuring websites are mobile-friendly and work across different devices, Implementing media queries and flexible layouts.</p>
+      </li>
+
+      <li class="service-item reveal">
+        <i class='bx bx-layer'></i>
+        <h3>Front-End Frameworks and Libraries</h3>
+        <p>Utilizing frameworks like React, Angular, or Vue.js for efficient development, Integrating libraries such as Bootstrap or Tailwind CSS for streamlined styling.</p>
+      </li>
+
+      <li class="service-item reveal">
+        <i class='bx bx-git-branch'></i>
+        <h3>Version Control</h3>
+        <p>Using Git for source code management and collaboration, Familiarity with platforms like GitHub, GitLab, or Bitbucket.</p>
+      </li>
+
+      <li class="service-item reveal">
+        <i class='bx bx-globe'></i>
+        <h3>Cross-Browser Compatibility</h3>
+        <p>Ensuring websites function consistently across different browsers, Testing and debugging for compatibility issues.</p>
+      </li>
+    </ul>
+  </section>
+  <!-- SERVICE END -->
+
+  <!-- CONTACT START -->
+  <section id="contact" data-section="contact">
+    <h2 class="sect_title contact reveal" data-animation="fade-bottom">Contact me</h2>
+
+    <div class="sect-container">
+      <div class="left">
+        <p>Feel free to reach out to me for collaboration opportunities, inquiries, or to discuss innovative front-end development projects. With a passion for creating engaging and dynamic user experiences, I am always excited to connect and explore new possibilities in the world of web development.</p>
+        <ul class="contact-container">
+          <li class="contact-list">
+            <i class='bx bx-envelope'></i>
+            <p>franklinoliveros2003@gmail.com</p>
+          </li>
+  
+          <li class="contact-list">
+            <i class='bx bx-phone' ></i>
+            <p>+63 991 631 2196</p>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="right">
+        <h3>Let's get in touch</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your email..." required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Message..." required></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT END -->
+
+  <!-- FOOTER START -->
+  <footer id="footer">
+    <div class="footer-contents">
+      <div class="about">
+        <h3>About me</h3>
+        <p>
+            Experienced computer science professional with a BSCS
+            in Computer Science from Western Mindanao State
+            University. Proficient in HTML, CSS, Bootstrap,
+            JavaScript, responsive design, and UI development.
+            Detail-oriented, organized, and effective in collaborative
+            teams. Creative, reliable, trustworthy, and committed to
+            continuous learning.
+          </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.facebook.com/franklinjames.oliveros" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a a href="https://www.linkedin.com/in/franklin-oliveros-ab4869310/" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-linkedin' ></i>
+        </a>
+        <a href="#">
+          <i class='bx bxl-instagram' ></i>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer-navbar">
+      <a href="#home"><p>Home</p></a>
+      <a href="#about"><p>About</p></a>
+      <a href="#skills"><p>Skills</p></a>
+      <a href="#project""><p>Projects</p></a>
+      <a href="#services"><p>Services</p></a>
+      <a href="#contact"><p>Contact</p></a>
+    </nav>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("K67R76s6EWsC6T-Wh");
+    })();
+  </script>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
