@@ -11,11 +11,12 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <div id="loading">
-    <img id="loading-image" src="path/to/ajax-loader.gif" alt="Loading..." />
-  </div>
+  <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230723195619/GfG-Image.png"
+        alt="GeeksforGeeks logo" />
 
   <!--HEADER START-->
   <header>
@@ -376,10 +377,20 @@
   <!-- FOOTER END -->
 
   <script>
-    $(window).load(function() {
-      $('#loading').hide();
-    });
-  </script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
 
   <script type="text/javascript">
     (function() {
