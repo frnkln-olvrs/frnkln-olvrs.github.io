@@ -13,6 +13,10 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 </head>
 <body>
+  <div id="loading">
+    <img id="loading-image" src="path/to/ajax-loader.gif" alt="Loading..." />
+  </div>
+
   <!--HEADER START-->
   <header>
     <a href="./index">
@@ -370,6 +374,12 @@
     </nav>
   </footer>
   <!-- FOOTER END -->
+
+  <script>
+    $(window).load(function() {
+      $('#loading').hide();
+    });
+  </script>
 
   <script type="text/javascript">
     (function() {
