@@ -395,6 +395,24 @@ nav.navbar ul li a:hover:after {
   color: var(--white);
 }
 
+#skills .b-center {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#skills .b-center .btn {
+  padding: 10px;
+  letter-spacing: 2.5px;
+  background-color: var(--primary);
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+#skills .b-center .btn:hover {
+  letter-spacing: 3px;
+}
+
 .skills-bar-container {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
